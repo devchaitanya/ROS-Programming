@@ -1,9 +1,11 @@
-<h3>1. A packet publisher publishes the name of the packet (string format)</h3>
+<h3>create two Turtles named "Dogobot" and "Catobot" in the turtlesim_node window </h3>
 
-<h3>2. A security publisher (string) converts the above packet into encrypted packet (usually the ceaser cipher, VITCC is equivalent to YLWFF).</h3>
+<h3>Catobot should be in the left bottom corner and move in circle in anticlockwise direction </h3>
 
-<h3>3. A third publisher is  a Int32 publisher, publishes an integer number with number of packets.</h3> 
+<h3>Dogobot should be in the top right corner and move in circle in clock wise direction</h3>
 
-<h3>4.There is only one subscriber, that tells the "Number of packets encrypted" after all the publishers publishes.
-i.e P1 AND P2 AND P3 => Subscriber
-</h3>
+set terminal to the path of the python files folder
+1. run "roscore" in a terminal window
+2. run "rosrun turtlesim turtlesim_node" in a sepearate window
+3. run "rosrun 'package name' kill.py" (remove the default turtle that is created when we initialized the turtlesim_node)
+4. run "rosrun 'package name' twoturtles.py"
